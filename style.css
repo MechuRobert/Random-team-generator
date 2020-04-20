@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    padding-left: 5px;
+    margin-right: 5px;
+    border: 1px solid grey;
+    box-shadow: 0 0 1px #B0CFE0;
+    border: 1px solid #B0CFE0;
+    min-height: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+button,
+input[type="button"] {
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 2px 15px;
+    text-decoration: none;
+    font: 10px;
+    margin-bottom: 5px;
+}
+
+.playersAreaClear,
+.playersSplitButton {
+    top: 100%;
+    left: 52.5%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: 5px;
+}
+
+
+.pageWrapper {
+    max-width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.playersArea {
+    display: flex;
+    padding: 50px;
+    border: 6px solid #305A72;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+
+}
+
+
+
+.playersAreaOptions {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+
+}
+
+
+
+.playersAreaShow {
+    position: relative;
+    width: 100px;
+}
+
+
+.playersSplit {
+    position: relative;
+}
+
+#pl {
+    height: 200px;
+    width: 100px;
+}
+
+.wrapper {
+    margin-top: 20px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border: 6px solid #305A72;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    padding: 5px;
+
+}
+
+
+
+
+.wrapper p {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.wrapper li {
+    margin-bottom: 5px;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ON&ON</title>
+</head>
+
+<body>
+    <div class="pageWrapper">
+        <div class="playersArea">
+            <div class="playersAreaShow">
+                <textarea id="pl" class="pl ta" readonly></textarea>
+
+                <div class="playersAreaClear">
+                    <input type="button" id="gt" onClick="clrPlayers()" value="Clear Players" /><br>
+                </div>
+            </div>
+
+            <div class="playersAreaOptions">
+
+                <div class="playersAreaAdd">
+                    <input type="text" id="apt" maxlength="24" placeholder="Player name" onfocus="this.value=''" />
+                    <input type="button" id="ap" onClick="addPlayer()" value="Add Player" /><br>
+                </div>
+
+                <div class="playersSplit">
+                    <form id="split_players_form">
+                        <div class="playersSplitInput">
+                            <input type="text" name="numberOfPlayers" placeholder="Number of players"
+                                onfocus="this.value=''">
+                            <input type="text" name="numberOfGroups" placeholder="Number of teams"
+                                onfocus="this.value=''">
+                        </div>
+                        <div class="playersSplitButton">
+                            <button type="submit">Generate team</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper"></div>
+    </div>
+    <template>
+        <div class="teamPlayers">
+            <p>group {{group}}</p>
+            <ul>
+
+            </ul>
+        </div>
+    </template>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
